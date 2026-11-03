@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Usage Statistics",
+    "description": "Adds a Usage Statistics page to the sidebar: token totals across every local session, peak, streaks, a token activity heatmap, daily trend and per-model usage."
+  }
+}

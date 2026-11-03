@@ -1,0 +1,65 @@
+{
+  "name": "dsh-usage-stats",
+  "version": "0.1.0",
+  "description": "All-session token usage dashboard for DeepSeek Harness: totals, peak, streaks, activity heatmap, daily trend, model breakdown and session ranking.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "usage",
+    "tokens",
+    "statistics",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "author": "inezmitche46-maker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inezmitche46-maker/dsh-usage-stats.git"
+  },
+  "homepage": "https://github.com/inezmitche46-maker/dsh-usage-stats#readme",
+  "bugs": {
+    "url": "https://github.com/inezmitche46-maker/dsh-usage-stats/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.1-rc.1 <0.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "icon": "./icon.svg",
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "docs/*",
+    "screenshots.json"
+  ]
+}

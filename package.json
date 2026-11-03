@@ -1,0 +1,18 @@
+{
+  "name": "dsh-usage-stats",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DeepSeek Harness token-usage plugins: an all-session usage dashboard and a composer token pill.",
+  "license": "MIT",
+  "author": "inezmitche46-maker",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inezmitche46-maker/dsh-usage-stats.git"
+  }
+}

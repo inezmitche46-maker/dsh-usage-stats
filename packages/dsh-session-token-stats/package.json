@@ -1,0 +1,62 @@
+{
+  "name": "dsh-session-token-stats",
+  "version": "0.1.0",
+  "description": "Composer token pill for DeepSeek Harness: whole-session uncached input, cache read, cache write and output token totals, plus cache-hit share.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "tokens",
+    "session",
+    "composer"
+  ],
+  "license": "MIT",
+  "author": "inezmitche46-maker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inezmitche46-maker/dsh-usage-stats.git"
+  },
+  "homepage": "https://github.com/inezmitche46-maker/dsh-usage-stats#readme",
+  "bugs": {
+    "url": "https://github.com/inezmitche46-maker/dsh-usage-stats/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.1-rc.1 <0.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "icon": "./icon.svg",
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ]
+}
